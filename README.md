@@ -9,3 +9,12 @@ so for example if max_part_size is set to 10MB and you upload a 10GB file it wil
 
 This code is modified to allow user to configure max simultaneous upload requests easily using max_parallel_xhrs variable.
 
+
+
+Basic Usage:
+
+var upfile = new S3MultiUpload(document.querySelector("#file_field").files[0]);
+upfile.start();
+upfile.onUploadCompleted = function(s3_url){
+//do something with the file url
+}
