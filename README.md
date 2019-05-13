@@ -14,7 +14,11 @@ This code is modified to allow user to configure max simultaneous upload request
 Basic Usage:
 
 var upfile = new S3MultiUpload(document.querySelector("#file_field").files[0]);
+
 upfile.start();
+
 upfile.onUploadCompleted = function(s3_url){
+
 //do something with the file url
+
 }
