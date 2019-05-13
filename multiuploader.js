@@ -18,10 +18,10 @@ function S3MultiUpload(file) {
     this.lastUploadedTime = []
     this.loaded = [];
     this.total = [];
+    this.uploaded_parts = -1; 
 
     // Max simultaneous upload requests
     this.max_parallel_xhrs = 2;
-    this.uploaded_parts = -1; 
 }
 
 /**
