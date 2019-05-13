@@ -7,4 +7,5 @@ The code in above link will start uploading all parts at once
 
 so for example if max_part_size is set to 10MB and you upload a 10GB file it will generate 1000 simultaneous connections, 
 
-This code is modified to allow user to configure max simultaneous upload requests easily using a variable.
+This code is modified to allow user to configure max simultaneous upload requests easily using max_parallel_xhrs variable.
+
